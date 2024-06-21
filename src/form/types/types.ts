@@ -157,10 +157,6 @@ export enum IntegratingSystemType {
   Other = 'OTHER'
 }
 
-export declare enum THEME_MODE {
-  DARK = 'dark'
-}
-
 export interface IPreviewGroup {
   id: string
   label: MessageDescriptor
@@ -561,7 +557,6 @@ export interface IFormFieldBase {
   mapping?: IFormFieldMapping
   hideAsterisk?: boolean
   hideHeader?: boolean
-  mode?: THEME_MODE
   hidden?: boolean
   previewGroup?: string
   nestedFields?: { [key: string]: IFormField[] }
@@ -585,7 +580,6 @@ export interface IFormFieldBase {
   ignoreFieldLabelOnErrorMessage?: boolean
   ignoreBottomMargin?: boolean
   customQuestionMappingId?: string
-  ignoreMediaQuery?: boolean
 }
 
 export interface Conditional {
